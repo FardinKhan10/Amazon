@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change color to white */
+}
+
+.navbar {
+    height: 60px;
+    background-color: #232F3E;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 12%;
+}
+
+.logo {
+    background-image: url("/image/downloadd.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.border {
+    border: 1px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+.add-fst {
+    color: #cdc3c3;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.add-sec {
+    color: white;
+    font-size: 1rem;
+    padding: 0 3px;
+}
+
+.add-icon {
+    padding: 0 10px;
+    display: flex;
+}
+
+.nav-search {
+    display: flex;
+    background-color: bisque;
+    height: 45px;
+    width: 600px;
+    border-radius: 5px;
+    border: none;
+    justify-content: space-evenly;
+}
+.nav-search:hover {
+    border: 3px solid orange;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-icon {
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #000000;
+}
+
+.search-select {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: bisque;
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.panel {
+    display: flex;
+    padding: 0 5px;
+    height: 40px;
+    background-color: #222f3d;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.panel-opt {
+    display: flex;
+    margin-left: 10px;
+    width: 80%;
+    font-size: 0.85rem;
+}
+
+.panel-opt p {
+    padding: 0 5px;
+    font-size: 0.85rem;
+}
+
+.panel-opt a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change color to white */
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.hero-section {
+    background-image: url("/image/Makeup-PC._CB567621255_.jpg");
+    height: 290px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 97%;
+    margin-top: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-msg a {
+    background-color: white;
+    color: #007185;
+}
+
+.shop-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.box-content a {
+    color: #007185;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #232F3E;
+    color: white;
+}
+
+.foot-panel1 {
+    background-color: #374753;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.foot-panel1:hover {
+    background-color: #232F3E;
+}
+
+.foot-panel2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.foot-panel2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot-panel2 p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.foot-panel2 li a {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.foot-panel2 li a:hover {
+    color: white;
+}
+
+.foot-panel3 {
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.foot-panel3 .logo {
+    background-image: url("/image/downloadd.png");
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.foot-panel4 {
+    background-color: #232F3E;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pages a {
+    color: #ccc;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.pages a:hover {
+    color: white;
+}
+
+.copy {
+    color: white;
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
